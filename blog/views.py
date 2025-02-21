@@ -11,5 +11,5 @@ def posts(request):
     return render(request, "blog/all-posts.html", {'timestamp': now().timestamp()})
     
 
-def post_detail(request):
+def post_detail(request, slug):
     return render(request, "blog/post-details.html", {'timestamp': now().timestamp()})

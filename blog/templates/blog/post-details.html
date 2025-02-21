@@ -1,8 +1,37 @@
 {% extends "app.html" %}
+{% load static %}
 
-{% block title %}{% endblock  %}
+{% block title %}
+This Post Title
+{% endblock  %}
+
+{% block css_files %} 
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}?v={{ timestamp }}">  
+{% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}?v={{ timestamp }}"> {% endcomment %}
+{% endblock %} 
 
 {% block content %}
 {% comment %} {% include "include/header.html" %} {% endcomment %}
-post detail
+
+
+<section id="summary">
+  <h2>Post Title</h2>
+  <article>
+    <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title">
+    <address><em>By Omi</em></address>
+    <div><em>Last updated on
+      <time>February 21st</time></em>
+    </div>
+  </article>
+</section>
+
+
+<main id="main-content">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur, consequatur maxime itaque iste incidunt tempore. Cum minima quibusdam similique ut omnis accusamus laboriosam, nesciunt obcaecati dignissimos deleniti qui quas!
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur, consequatur maxime itaque iste incidunt tempore. Cum minima quibusdam similique ut omnis accusamus laboriosam, nesciunt obcaecati dignissimos deleniti qui quas!
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tenetur, consequatur maxime itaque iste incidunt tempore. Cum minima quibusdam similique ut omnis accusamus laboriosam, nesciunt obcaecati dignissimos deleniti qui quas!
+  </p>
+</main>
 {% endblock  %}

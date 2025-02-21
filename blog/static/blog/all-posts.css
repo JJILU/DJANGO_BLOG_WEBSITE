@@ -47,6 +47,11 @@ ul {
   object-fit: cover;
 }
 
+
+
+
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
   #all-posts {
