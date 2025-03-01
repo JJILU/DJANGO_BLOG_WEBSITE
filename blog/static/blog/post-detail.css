@@ -10,30 +10,9 @@ section#summary address,time{
 
 section#summary h2 {
  font-size: 3rem;
+ margin-bottom: 0.25rem;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-/* address em {
-  margin-left: 160px;
-}
-time {
-  font-weight: bold;
-} */
-
-#main-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 #summary {
   display: flex;
@@ -46,6 +25,76 @@ time {
   margin: 20px auto; /* Reduced margin */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+#summary img {
+  width: 120px;
+  height: 125px;
+  border: 4px solid #f4a261;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+img {
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
+
+#summary a {
+  color: #504d4d;
+  text-decoration: none;
+}
+
+#summary a:hover {
+  color: #f4a261;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.tags-container {
+  display: flex; /* Ensures tags are on the same line */
+  flex-direction: row;  
+  justify-content: start; /* Aligns tags to the left */
+  gap: 8px; /* Adds spacing between tags */
+  flex-wrap: wrap; /* Allows tags to wrap if needed */
+  margin-top: 8px; /* Ensures space between h2 and tags */
+}
+
+.tag {
+  color: white !important;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+
+/* .head_container {
+  
+} */
+
+
+
+/* Main Navigation Section */
+
+#main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 #main-navigation h1 a {
   color: #f4a261;
@@ -69,20 +118,6 @@ time {
 }
 
 
-#summary img {
-  width: 120px;
-  height: 125px;
-  border: 4px solid #f4a261;
-  object-fit: cover;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-
-
-img {
-  transform: rotate(5deg);
-  border-radius: 10px;
-}
 
 
 /* Main Content */
